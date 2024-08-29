@@ -1,0 +1,163 @@
+/* Import a Google font for the page */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Define a box-shadow variable to use throughout the CSS */
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Apply box-sizing rule to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic body styling: background color, centering, and font */
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+/* Container for the main content with a fixed width and auto margin */
+.container {
+  margin: 30px auto;
+  width: 400px;
+}
+
+/* Basic heading styling */
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Styling for the income and expense container */
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* Basic list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+/* Styling for list items */
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Additional styling for expense items */
+.minus {
+  border-right: 5px solid #c0392b;
+}
+
+/* Additional styling for income items */
+.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+/* Delete button styling */
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+}
+
+/* Form control styling */
+.form-control {
+  margin: 10px 0 30px;
+  position: relative;
+}
+
+/* Form input and label styling */
+.form-control label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.form-control input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Button styling */
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* Balance display styling */
+#balance {
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* Money display styling */
+.money {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  body {
+    width: 95%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
